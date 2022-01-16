@@ -30,6 +30,12 @@ The use of the SmoothL1Loss means that you have a standard MSE for errors below 
 3. The second hidden layer is fully-connected and also consists of 64 rectifier units.
 4. The output layer is a fully-connected linear layer with a single output for each of the 4 actions.
 
+### Reward Plot
+
+This is the plot of the reward per episode. This was solved in 331 episodes, though when I initially ran it, I had gotten 250 episodes.
+
+![Reward Plot](reward_plot.png)
+
 ## Hyperparameters Tried
 
 I tried a few different approaches that were variants to the above chosen algorithm. Each was less optimal.
