@@ -55,7 +55,7 @@ To discover this optimal policy, we use a Q function, which calculates the expec
 
 It may not be ideal to always take the action with the maximal Q value. For instance, early in training the information can be noisy. Our agent might find an action in a state to provide the maximal Q value accidently due to noise, and commit to this action too early in training. In this case, it would be ideal to every so often choose the actions in a state at random allowing for more exploration of the state-action-value space. Over time as we explore the space, we can reduce the amount of exploration. This is exactly what the epsilon-greedy algorithm allows.
 
-This algorithm allows the agent to systematically manage the exploration-exploitation trade-off. The agent "explores" by picking a random action with a uniform probability epsilon. The agent continues to "exploit" its knowledge of the environment by choosing actions based on the policy with probability one minus epsilon. The epsilon value is decayed over time so that the agent favors exploration early on but over time favors exploitation as it gains more experience.
+This algorithm allows the agent to manage the exploration-exploitation trade-off. The agent "explores" by picking a random action with a uniform probability, epsilon. The agent continues to "exploit" its knowledge of the environment by choosing actions based on the policy with probability one minus epsilon. The epsilon value is decayed over time so that the agent favors exploration early on but over time favors exploitation as it gains more experience.
 
 ### Deep Q-Network (DQN)
 
