@@ -2,7 +2,7 @@
 
 In this project, I build a reinforcement learning (RL) agent to solve the Unity's Reacher environment using the deep deterministic policy gradient (DDPG) approach (see: https://arxiv.org/pdf/1509.02971.pdf).
 
-In this environment, a double-jointed arm can move to target locations shown as a green sphere moving around. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. The goal of your agent is to maintain its position at the target location for as many time steps as possible. In order to solve the environment, our agent must achieve a score of +30 for 100 consecutive episodes. The final solution used 20 agents.
+In this environment, a double-jointed arm can move to target locations shown as a green sphere moving around. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. The goal of your agent is to maintain its position at the target location for as many time steps as possible. The final solution used 20 agents. In order to solve the environment, our agent must receive an average score of +30 for 100 consecutive episodes and over all 20 agents.
 
 Some additional details: The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector must be a number between -1 and 1.
 
